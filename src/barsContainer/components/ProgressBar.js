@@ -6,6 +6,7 @@ const Bar = styled.div`
   width: ${props => props.barValue > 100 ? 100 : props.barValue}%;
   background: ${props => props.barValue > 100 ? 'red' : '#b3d7e6'};
   margin-bottom: 10px;
+  transition: width 1s ease-in-out;
 `
 const Wrap = styled.div`
   height: 38px;

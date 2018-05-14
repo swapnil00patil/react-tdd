@@ -9,7 +9,7 @@ import ProgressBars from './components/ProgressBars'
 const Wrap = styled.div`
   max-width:400px;
   background: #fff;
-  padding:18px 50px;
+  padding:30px 50px;
   width: 100%;
 `
 const Title = styled.h2`

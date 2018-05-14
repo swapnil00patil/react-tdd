@@ -5,6 +5,8 @@ const Select = styled.select`
   height: 33px;
   width: 150px;
   font-size: 18px;
+  background: transparent;
+  cursor:pointer;
 `
 const Option = styled.option`
 
