@@ -1,10 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BarsContainer should match snapshot 1`] = `
+exports[`Dropdown should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BarsContainer />,
+  Symbol(enzyme.__unrendered__): <Dropdown
+    bars={
+        Array [
+            12,
+            13,
+            14,
+          ]
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,56 +26,60 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <styled.h2>
-          Progress Bars Demo
-</styled.h2>,
-        "/* Bars component */",
-        <BarControls
-          buttons={Array []}
-          updateProgress={[Function]}
-/>,
-        <Dropdown
-          bars={Array []}
-          selectBar={[Function]}
-/>,
+        <styled.option
+          value={12}
+>
+          12
+</styled.option>,
+        <styled.option
+          value={13}
+>
+          13
+</styled.option>,
+        <styled.option
+          value={14}
+>
+          14
+</styled.option>,
       ],
+      "onChange": undefined,
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0",
         "nodeType": "class",
         "props": Object {
-          "children": "Progress Bars Demo",
+          "children": 12,
+          "value": 12,
         },
         "ref": null,
-        "rendered": "Progress Bars Demo",
-        "type": [Function],
-      },
-      "/* Bars component */",
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "buttons": Array [],
-          "updateProgress": [Function],
-        },
-        "ref": null,
-        "rendered": null,
+        "rendered": 12,
         "type": [Function],
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1",
         "nodeType": "class",
         "props": Object {
-          "bars": Array [],
-          "selectBar": [Function],
+          "children": 13,
+          "value": 13,
         },
         "ref": null,
-        "rendered": null,
+        "rendered": 13,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "class",
+        "props": Object {
+          "children": 14,
+          "value": 14,
+        },
+        "ref": null,
+        "rendered": 14,
         "type": [Function],
       },
     ],
@@ -80,56 +92,60 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <styled.h2>
-            Progress Bars Demo
-</styled.h2>,
-          "/* Bars component */",
-          <BarControls
-            buttons={Array []}
-            updateProgress={[Function]}
-/>,
-          <Dropdown
-            bars={Array []}
-            selectBar={[Function]}
-/>,
+          <styled.option
+            value={12}
+>
+            12
+</styled.option>,
+          <styled.option
+            value={13}
+>
+            13
+</styled.option>,
+          <styled.option
+            value={14}
+>
+            14
+</styled.option>,
         ],
+        "onChange": undefined,
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0",
           "nodeType": "class",
           "props": Object {
-            "children": "Progress Bars Demo",
+            "children": 12,
+            "value": 12,
           },
           "ref": null,
-          "rendered": "Progress Bars Demo",
-          "type": [Function],
-        },
-        "/* Bars component */",
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "buttons": Array [],
-            "updateProgress": [Function],
-          },
-          "ref": null,
-          "rendered": null,
+          "rendered": 12,
           "type": [Function],
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1",
           "nodeType": "class",
           "props": Object {
-            "bars": Array [],
-            "selectBar": [Function],
+            "children": 13,
+            "value": 13,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": 13,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "class",
+          "props": Object {
+            "children": 14,
+            "value": 14,
+          },
+          "ref": null,
+          "rendered": 14,
           "type": [Function],
         },
       ],

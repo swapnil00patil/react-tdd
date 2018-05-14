@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { getBars } from './bars.service'
 import BarControls from './components/BarControls'
+import Dropdown from './components/Dropdown'
 
 const Wrap = styled.div`
   width:500px;
@@ -18,7 +19,8 @@ class BarsContainer extends React.Component {
     super(props)
     this.state = {
       buttons: [],
-      bars: []
+      bars: [],
+      selectedBar: 0
     }
   }
 
@@ -40,12 +42,17 @@ class BarsContainer extends React.Component {
     console.log(value)
   }
 
+  selectBar (e) {
+    console.log(e.target.value)
+  }
+
   render () {
     return (
       <Wrap>
         <Title>Progress Bars Demo</Title>
         /* Bars component */
         <BarControls buttons={this.state.buttons} updateProgress={this.updateProgress} />
+        <Dropdown bars={this.state.bars} selectBar={this.selectBar} />
       </Wrap>
     )
   }
