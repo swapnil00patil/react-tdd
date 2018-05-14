@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBars should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProgressBars
+    bars={
+        Array [
+            12,
+            13,
+            14,
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Array [
+    <ProgressBar
+      barValue={12}
+/>,
+    <ProgressBar
+      barValue={13}
+/>,
+    <ProgressBar
+      barValue={14}
+/>,
+  ],
+  Symbol(enzyme.__nodes__): Array [
+    Array [
+      <ProgressBar
+        barValue={12}
+/>,
+      <ProgressBar
+        barValue={13}
+/>,
+      <ProgressBar
+        barValue={14}
+/>,
+    ],
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

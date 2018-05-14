@@ -21,7 +21,9 @@ ShallowWrapper {
         <styled.h2>
           Progress Bars Demo
 </styled.h2>,
-        "/* Bars component */",
+        <ProgressBars
+          bars={Array []}
+/>,
         <BarControls
           buttons={Array []}
           updateProgress={[Function]}
@@ -45,7 +47,17 @@ ShallowWrapper {
         "rendered": "Progress Bars Demo",
         "type": [Function],
       },
-      "/* Bars component */",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "bars": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -83,7 +95,9 @@ ShallowWrapper {
           <styled.h2>
             Progress Bars Demo
 </styled.h2>,
-          "/* Bars component */",
+          <ProgressBars
+            bars={Array []}
+/>,
           <BarControls
             buttons={Array []}
             updateProgress={[Function]}
@@ -107,7 +121,17 @@ ShallowWrapper {
           "rendered": "Progress Bars Demo",
           "type": [Function],
         },
-        "/* Bars component */",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bars": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,

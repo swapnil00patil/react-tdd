@@ -10,7 +10,7 @@ describe('Dropdown', () => {
 
   it('should render exactly same number bars', () => {
     const wrapper = mount(<Dropdown bars={[12, 13, 14]} />)
-    wrapper.find('option').length.valueOf(3)
+    expect(wrapper.find('option').length).toBe(3)
   })
 
   it('check correct value is retrieved when change dropdown', () => {

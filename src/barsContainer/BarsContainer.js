@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { getBars } from './bars.service'
 import BarControls from './components/BarControls'
 import Dropdown from './components/Dropdown'
+import ProgressBars from './components/ProgressBars'
 
 const Wrap = styled.div`
   width:500px;
@@ -50,7 +51,7 @@ class BarsContainer extends React.Component {
     return (
       <Wrap>
         <Title>Progress Bars Demo</Title>
-        /* Bars component */
+        <ProgressBars bars={this.state.bars} />
         <BarControls buttons={this.state.buttons} updateProgress={this.updateProgress} />
         <Dropdown bars={this.state.bars} selectBar={this.selectBar} />
       </Wrap>
