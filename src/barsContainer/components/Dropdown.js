@@ -2,22 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Select = styled.select`
-  height: 38px;
+  height: 33px;
   width: 150px;
-  padding: 5px;
+  font-size: 18px;
 `
 const Option = styled.option`
-  height: 38px;
-  width: 150px;
-  padding: 5px;
+
 `
 
 class Dropdown extends React.PureComponent {
   render () {
-    const { bars, selectBar } = this.props
+    const { bars, selectBar, className } = this.props
     return (
-      <Select onChange={selectBar}>
-        {bars.map((value, index) => <Option key={index} value={value}>{value}</Option>)}
+      <Select onChange={selectBar} className={className}>
+        {bars.map((value, index) => <Option key={index} value={value}>#progress{ index + 1}</Option>)}
       </Select>
     )
   }

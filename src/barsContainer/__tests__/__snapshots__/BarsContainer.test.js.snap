@@ -24,13 +24,13 @@ ShallowWrapper {
         <ProgressBars
           bars={Array []}
 />,
+        <Styled(Dropdown)
+          bars={Array []}
+          selectBar={[Function]}
+/>,
         <BarControls
           buttons={Array []}
           updateProgress={[Function]}
-/>,
-        <Dropdown
-          bars={Array []}
-          selectBar={[Function]}
 />,
       ],
     },
@@ -63,8 +63,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "buttons": Array [],
-          "updateProgress": [Function],
+          "bars": Array [],
+          "selectBar": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -75,8 +75,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "bars": Array [],
-          "selectBar": [Function],
+          "buttons": Array [],
+          "updateProgress": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -98,13 +98,13 @@ ShallowWrapper {
           <ProgressBars
             bars={Array []}
 />,
+          <Styled(Dropdown)
+            bars={Array []}
+            selectBar={[Function]}
+/>,
           <BarControls
             buttons={Array []}
             updateProgress={[Function]}
-/>,
-          <Dropdown
-            bars={Array []}
-            selectBar={[Function]}
 />,
         ],
       },
@@ -137,8 +137,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "buttons": Array [],
-            "updateProgress": [Function],
+            "bars": Array [],
+            "selectBar": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -149,8 +149,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "bars": Array [],
-            "selectBar": [Function],
+            "buttons": Array [],
+            "updateProgress": [Function],
           },
           "ref": null,
           "rendered": null,

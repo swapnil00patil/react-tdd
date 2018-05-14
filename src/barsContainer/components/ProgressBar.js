@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const Bar = styled.div`
   height: 38px;
-  width: ${props => props.barValue}%;
-  background: #b3d7e6;
+  width: ${props => props.barValue > 100 ? 100 : props.barValue}%;
+  background: ${props => props.barValue > 100 ? 'red' : '#b3d7e6'};
   margin-bottom: 10px;
 `
 const Wrap = styled.div`
@@ -13,6 +13,14 @@ const Wrap = styled.div`
   background: transparent;
   margin-bottom: 10px;
   border: 1px solid #000;
+  position:relative;
+`
+const Text = styled.span`
+  position:absolute;
+  width: 100%;
+  display: flex;
+  top: 10px;
+  justify-content: center;
 `
 
 class ProgressBar extends React.PureComponent {
@@ -21,6 +29,7 @@ class ProgressBar extends React.PureComponent {
     return (
       <Wrap>
         <Bar barValue={barValue} />
+        <Text>{barValue}%</Text>
       </Wrap>
     )
   }

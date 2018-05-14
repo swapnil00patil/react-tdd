@@ -29,19 +29,23 @@ ShallowWrapper {
         <styled.option
           value={12}
 >
-          12
+          #progress
+          1
 </styled.option>,
         <styled.option
           value={13}
 >
-          13
+          #progress
+          2
 </styled.option>,
         <styled.option
           value={14}
 >
-          14
+          #progress
+          3
 </styled.option>,
       ],
+      "className": undefined,
       "onChange": undefined,
     },
     "ref": null,
@@ -51,11 +55,17 @@ ShallowWrapper {
         "key": "0",
         "nodeType": "class",
         "props": Object {
-          "children": 12,
+          "children": Array [
+            "#progress",
+            1,
+          ],
           "value": 12,
         },
         "ref": null,
-        "rendered": 12,
+        "rendered": Array [
+          "#progress",
+          1,
+        ],
         "type": [Function],
       },
       Object {
@@ -63,11 +73,17 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "class",
         "props": Object {
-          "children": 13,
+          "children": Array [
+            "#progress",
+            2,
+          ],
           "value": 13,
         },
         "ref": null,
-        "rendered": 13,
+        "rendered": Array [
+          "#progress",
+          2,
+        ],
         "type": [Function],
       },
       Object {
@@ -75,11 +91,17 @@ ShallowWrapper {
         "key": "2",
         "nodeType": "class",
         "props": Object {
-          "children": 14,
+          "children": Array [
+            "#progress",
+            3,
+          ],
           "value": 14,
         },
         "ref": null,
-        "rendered": 14,
+        "rendered": Array [
+          "#progress",
+          3,
+        ],
         "type": [Function],
       },
     ],
@@ -95,19 +117,23 @@ ShallowWrapper {
           <styled.option
             value={12}
 >
-            12
+            #progress
+            1
 </styled.option>,
           <styled.option
             value={13}
 >
-            13
+            #progress
+            2
 </styled.option>,
           <styled.option
             value={14}
 >
-            14
+            #progress
+            3
 </styled.option>,
         ],
+        "className": undefined,
         "onChange": undefined,
       },
       "ref": null,
@@ -117,11 +143,17 @@ ShallowWrapper {
           "key": "0",
           "nodeType": "class",
           "props": Object {
-            "children": 12,
+            "children": Array [
+              "#progress",
+              1,
+            ],
             "value": 12,
           },
           "ref": null,
-          "rendered": 12,
+          "rendered": Array [
+            "#progress",
+            1,
+          ],
           "type": [Function],
         },
         Object {
@@ -129,11 +161,17 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "class",
           "props": Object {
-            "children": 13,
+            "children": Array [
+              "#progress",
+              2,
+            ],
             "value": 13,
           },
           "ref": null,
-          "rendered": 13,
+          "rendered": Array [
+            "#progress",
+            2,
+          ],
           "type": [Function],
         },
         Object {
@@ -141,11 +179,17 @@ ShallowWrapper {
           "key": "2",
           "nodeType": "class",
           "props": Object {
-            "children": 14,
+            "children": Array [
+              "#progress",
+              3,
+            ],
             "value": 14,
           },
           "ref": null,
-          "rendered": 14,
+          "rendered": Array [
+            "#progress",
+            3,
+          ],
           "type": [Function],
         },
       ],

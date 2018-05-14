@@ -7,8 +7,9 @@ const Center = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background: #000;
+  padding: 30px 0;
 `
 
 class App extends Component {
