@@ -2,10 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { getBars } from './bars.service'
+import BarControls from './components/BarControls'
 
 const Wrap = styled.div`
   width:500px;
   background: #fff;
+  padding:18px;
 `
 const Title = styled.h2`
   text-align:center;
@@ -16,19 +18,17 @@ class BarsContainer extends React.Component {
     super(props)
     this.state = {
       buttons: [],
-      bars: [],
-      isMounted: false
+      bars: []
     }
   }
 
   async componentDidMount () {
     try {
       let response = await getBars()
-      if (response && !this.state.isMounted) {
+      if (response) {
         this.setState({
           buttons: response.data.buttons,
-          bars: response.data.bars,
-          isMounted: true
+          bars: response.data.bars
         })
       }
     } catch (error) {
@@ -36,12 +36,16 @@ class BarsContainer extends React.Component {
     }
   }
 
+  updateProgress (value) {
+    console.log(value)
+  }
+
   render () {
     return (
       <Wrap>
         <Title>Progress Bars Demo</Title>
         /* Bars component */
-        /* Control Component */
+        <BarControls buttons={this.state.buttons} updateProgress={this.updateProgress} />
       </Wrap>
     )
   }

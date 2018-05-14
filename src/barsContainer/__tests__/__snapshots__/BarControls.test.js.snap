@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BarControls should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BarControls
+    buttons={
+        Array [
+            12,
+            13,
+            14,
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Array [
+    Array [
+      <styled.button
+        onClick={[Function]}
+>
+        12
+</styled.button>,
+    ],
+    Array [
+      <styled.button
+        onClick={[Function]}
+>
+        13
+</styled.button>,
+    ],
+    Array [
+      <styled.button
+        onClick={[Function]}
+>
+        14
+</styled.button>,
+    ],
+  ],
+  Symbol(enzyme.__nodes__): Array [
+    Array [
+      Array [
+        <styled.button
+          onClick={[Function]}
+>
+          12
+</styled.button>,
+      ],
+      Array [
+        <styled.button
+          onClick={[Function]}
+>
+          13
+</styled.button>,
+      ],
+      Array [
+        <styled.button
+          onClick={[Function]}
+>
+          14
+</styled.button>,
+      ],
+    ],
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

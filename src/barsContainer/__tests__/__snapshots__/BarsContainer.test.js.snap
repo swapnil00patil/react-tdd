@@ -21,7 +21,11 @@ ShallowWrapper {
         <styled.h2>
           Progress Bars Demo
 </styled.h2>,
-        "/* Bars component */ /* Control Component */",
+        "/* Bars component */",
+        <BarControls
+          buttons={Array []}
+          updateProgress={[Function]}
+/>,
       ],
     },
     "ref": null,
@@ -37,7 +41,19 @@ ShallowWrapper {
         "rendered": "Progress Bars Demo",
         "type": [Function],
       },
-      "/* Bars component */ /* Control Component */",
+      "/* Bars component */",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "buttons": Array [],
+          "updateProgress": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -51,7 +67,11 @@ ShallowWrapper {
           <styled.h2>
             Progress Bars Demo
 </styled.h2>,
-          "/* Bars component */ /* Control Component */",
+          "/* Bars component */",
+          <BarControls
+            buttons={Array []}
+            updateProgress={[Function]}
+/>,
         ],
       },
       "ref": null,
@@ -67,7 +87,19 @@ ShallowWrapper {
           "rendered": "Progress Bars Demo",
           "type": [Function],
         },
-        "/* Bars component */ /* Control Component */",
+        "/* Bars component */",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "buttons": Array [],
+            "updateProgress": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": [Function],
     },
