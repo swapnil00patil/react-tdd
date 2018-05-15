@@ -14,13 +14,9 @@ const Option = styled.option`
 
 class Dropdown extends React.Component {
   shouldComponentUpdate (nextProps) {
-    console.log(nextProps.bars)
-    console.log(this.props.bars)
     if (this.props.bars && nextProps.bars.length === this.props.bars.length) {
-      console.log('gg')
       return false
     } else {
-      console.log('sssss')
       return true
     }
   }

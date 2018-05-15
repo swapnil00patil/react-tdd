@@ -15,13 +15,29 @@ const Button = styled.button`
     color:#fff;
   }
 `
+const Placeholder = styled.div`
+  text-align:center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-right: 8px;
+  padding: 5px 20px;
+  border: 1px solid #ccc;
+  display: inline;
+
+  &:hover {
+    background: gray;
+    color:#fff;
+  }
+`
 
 class BarControls extends React.PureComponent {
   render () {
     const { buttons, updateProgress } = this.props
-    return buttons.map((value, index) => [
+    return (buttons && buttons.length > 0) ? buttons.map((value, index) => [
       <Button key={index} onClick={() => updateProgress(value)}>{value}</Button>
-    ])
+    ]) : [1, 2, 3, 4].map((value, index) => <Placeholder key={index} />)
   }
 }
 
