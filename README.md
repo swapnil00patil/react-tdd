@@ -23,14 +23,14 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-# Approach
+# `Approach`
 
-### Created component strucuture on paper
+### `Created component strucuture on paper`
 
 https://imgur.com/a/o0GMHby
 
 
-### Setup
+### `Setup`
 
 Used create-react-app to get up and running quickly
 
@@ -44,14 +44,13 @@ Setup Enzyme
 Added jest Mocks for axios
 Cleanup unnecessary things from create react app
 
-## Developement
+## `Developement`
 
 Created presentational/dumb components first using TDD
 Created connected dots with container
 
 Fixed issues - 
     1) Blank UI was visible to user until we receive data from service. Fixed by adding placeholders (reactive design pattern)
-
     Screenshots - https://imgur.com/a/69Qb3O2 
     Commit - https://github.com/swapnil00patil/react-tdd/commit/2404322b44a61049f108c5d9ca56c241268a811f
 
@@ -61,13 +60,13 @@ Fixed issues -
     3) Issue with Mutating state (as we are not using any immutable library)
     Commit - https://github.com/swapnil00patil/react-tdd/commit/f259bccd5f2e3bd26aac4b676c0f0c3a59899e94
 
-## Deployment
+## `Deployment`
 
 Added code splitting for vendors (we can split more if app size grow)
 
 Added drop console logs to uglify webpack plugin
 
-### Deployed to heroku 
+### `Deployed to heroku`
 
 URL - https://react-tdd-demo.herokuapp.com/
 Screenshot - https://imgur.com/a/hnVCjBa
