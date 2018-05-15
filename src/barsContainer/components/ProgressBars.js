@@ -15,6 +15,7 @@ const Placeholder = styled.div`
 class ProgressBars extends React.Component {
   render () {
     const { bars } = this.props
+    console.log(bars)
     return (bars && bars.length > 0)
       ? bars.map((value, index) => <ProgressBar key={index} barValue={value} />)
       : [1, 2, 3].map((value, index) => <Placeholder key={index} />)

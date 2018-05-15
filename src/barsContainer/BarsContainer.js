@@ -49,15 +49,22 @@ class BarsContainer extends React.Component {
   }
 
   updateProgress (value) {
-    let selectedBarValue = this.state.bars[this.state.selectedBar] + value
+    // copy bars as we do not want to mutate
+    let bars = [...this.state.bars]
+    // calculate new value for bar
+    let selectedBarValue = bars[this.state.selectedBar] + value
+    // validate if new value is not less than 0
     selectedBarValue = selectedBarValue < 0 ? 0 : selectedBarValue
-    this.state.bars[this.state.selectedBar] = selectedBarValue
+    // set bar value in copied bars
+    bars[this.state.selectedBar] = selectedBarValue
+    // set state which will trigger render
     this.setState({
-      bars: this.state.bars
+      bars
     })
   }
 
   selectBar (e) {
+    // I decided to use index rather than value as we may get same value
     this.setState({
       selectedBar: e.nativeEvent.target.selectedIndex
     })

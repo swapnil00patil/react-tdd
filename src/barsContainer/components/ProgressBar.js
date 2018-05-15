@@ -40,6 +40,16 @@ class ProgressBar extends React.PureComponent {
     }), 0)
   }
 
+  componentWillReceiveProps (nextProps) {
+    // calling setState does not trigger additional render
+    const { barValue } = nextProps
+    if (barValue !== this.props.barValue) {
+      this.setState({
+        barValue
+      })
+    }
+  }
+
   render () {
     return (
       <Wrap>
