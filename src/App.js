@@ -14,6 +14,7 @@ const Center = styled.div`
 
 class App extends Component {
   render () {
+    // Do not want to add component here so we can extend in future as required
     return (
       <Center>
         <BarsContainer />
