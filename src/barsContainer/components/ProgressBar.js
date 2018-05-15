@@ -25,12 +25,26 @@ const Text = styled.span`
 `
 
 class ProgressBar extends React.PureComponent {
-  render () {
+  constructor (props) {
+    super(props)
+    this.state = {
+      barValue: 0
+    }
+  }
+
+  componentDidMount () {
     const { barValue } = this.props
+    // push to event loop so initial animation will work
+    setTimeout(() => this.setState({
+      barValue
+    }), 0)
+  }
+
+  render () {
     return (
       <Wrap>
-        <Bar barValue={barValue} />
-        <Text>{barValue}%</Text>
+        <Bar barValue={this.state.barValue} />
+        <Text>{this.state.barValue}%</Text>
       </Wrap>
     )
   }

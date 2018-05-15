@@ -21,10 +21,10 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <styled.div
-          barValue={12}
+          barValue={0}
 />,
         <styled.span>
-          12
+          0
           %
 </styled.span>,
       ],
@@ -36,7 +36,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "barValue": 12,
+          "barValue": 0,
         },
         "ref": null,
         "rendered": null,
@@ -48,13 +48,13 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            12,
+            0,
             "%",
           ],
         },
         "ref": null,
         "rendered": Array [
-          12,
+          0,
           "%",
         ],
         "type": [Function],
@@ -70,10 +70,10 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <styled.div
-            barValue={12}
+            barValue={0}
 />,
           <styled.span>
-            12
+            0
             %
 </styled.span>,
         ],
@@ -85,7 +85,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "barValue": 12,
+            "barValue": 0,
           },
           "ref": null,
           "rendered": null,
@@ -97,13 +97,13 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              12,
+              0,
               "%",
             ],
           },
           "ref": null,
           "rendered": Array [
-            12,
+            0,
             "%",
           ],
           "type": [Function],
